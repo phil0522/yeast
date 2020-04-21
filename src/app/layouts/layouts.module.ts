@@ -4,6 +4,7 @@ import { BasicLayoutComponent } from './basic-layout/basic-layout.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { WidgetsModule } from '../widgets/widgets.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
 
 
 
@@ -11,6 +12,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   declarations: [
     BasicLayoutComponent,
     SidebarComponent,
+    MenuItemComponent,
   ],
   imports: [
     AppRoutingModule,

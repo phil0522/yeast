@@ -6,9 +6,7 @@
     "yeast": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "inlineStyle": true
-        }
+        "@schematics/angular:component": {}
       },
       "root": "",
       "sourceRoot": "src",

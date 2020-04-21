@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'yeast-icon',
@@ -18,6 +18,7 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class YeastIconComponent implements OnInit {
+  @Input() hint: string;
 
   constructor() { }
 
@@ -25,6 +26,7 @@ export class YeastIconComponent implements OnInit {
   }
 
   getIconUrl(): string {
+
     return "/assets/icons/fold.svg";
   }
 

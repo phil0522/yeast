@@ -1,8 +1,8 @@
 <section class="basic-layout-root">
-  <aside class="basic-layout-left"></aside>
+  <aside class="basic-layout-left" [class.collapsed]="collapsed"></aside>
   <section class="basic-layout-right">
     <header class="basic-layout-header">
-      <div><span class="material-icons">view_headline</span></div>
+      <div (click)="onCollapseClick()"><span class="material-icons">view_headline</span></div>
       <div style="flex: 1;"></div>
       <div class="header-right-toolbar">
         <div><span class="material-icons-outlined toolbar-icon">notifications</span></div>

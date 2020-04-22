@@ -12,6 +12,10 @@
   flex: 0 0 256px;
 }
 
+.basic-layout-left.collapsed {
+  flex: 0 0 64px;
+}
+
 .basic-layout-right {
   flex: 1;
   display: flex;

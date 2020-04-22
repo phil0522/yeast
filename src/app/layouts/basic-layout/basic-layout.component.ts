@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalLayoutService } from 'src/app/services/global-layout.service';
 
 @Component({
   selector: 'basic-layout',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicLayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private layoutService: GlobalLayoutService) { }
+
+  private collapsed = false;
 
   ngOnInit(): void {
+    this.layoutService.getCollapsedState().subscribe(
+      v => {
+        console.log("update collapse state to ", v);
+        this.collapsed = v;
+      }
+    )
+  }
+
+  onCollapseClick(): void {
+    this.layoutService.setCollapsedState(!this.collapsed);
   }
 
 }

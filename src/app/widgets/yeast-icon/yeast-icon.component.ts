@@ -27,7 +27,7 @@ export class YeastIconComponent implements OnInit {
 
   getIconUrl(): string {
 
-    return "/assets/icons/fold.svg";
+    return '/assets/icons/fold.svg';
   }
 
 }

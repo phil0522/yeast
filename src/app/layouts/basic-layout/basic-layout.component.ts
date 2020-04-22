@@ -15,10 +15,10 @@ export class BasicLayoutComponent implements OnInit {
   ngOnInit(): void {
     this.layoutService.getCollapsedState().subscribe(
       v => {
-        console.log("update collapse state to ", v);
+        console.log(`update collapse state to ${v}`);
         this.collapsed = v;
       }
-    )
+    );
   }
 
   onCollapseClick(): void {

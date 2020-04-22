@@ -10,15 +10,73 @@
   background-color: #001529;
   box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
   flex: 0 0 256px;
+  overflow: hidden;
   /** The transition control animation when this class is applied. */
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  color: #DDDDFF;
+  padding: 16px 24px 0 24px;
+
+  span {
+    display: inline-flex;
+    // vertical align is critical to make sure span box has same size.
+    // Without this, it tries to align on the base line.
+    vertical-align: middle;
+    font-weight: 400;
+  }
+  .menu-text {
+    margin-left: 1ex;
+  }
+
+  .logo {
+    height: 52px;
+    margin-bottom: 32px;
+    // Needs the follow 2 properties to make the text not wrap on animation.
+    white-space: nowrap;
+    text-overflow: clip;
+    span {
+      line-height: 48px;
+      font-size: 40px;
+    }
+
+    .material-icons {
+      color: yellowgreen;
+    }
+  }
+  .menu-item {
+    margin-top: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    height: 40px;
+    cursor: pointer;
+    span {
+      line-height: 36px;
+      font-size: 24px;
+    }
+    .material-icons {
+      color: green;
+    }
+    .menu-text {
+      margin-left: 12px;
+    }
+  }
 }
 
 .basic-layout-left.collapsed {
-  flex: 0 0 64px;
+  padding: 16px 4px 0 4px;
+  flex: 0 0 60px;
 
   /** The transition control animation when this class is applied. */
   transition: all 0.5s ease-in-out;
+
+  .menu-text {
+    display: none;
+  }
+  .menu-item, .logo {
+    text-align: center;
+  }
 }
 
 .basic-layout-right {

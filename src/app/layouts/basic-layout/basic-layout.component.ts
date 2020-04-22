@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-basic-layout',
+  selector: 'basic-layout',
   templateUrl: './basic-layout.component.html',
-  styles: [
-  ]
+  styleUrls: ['./basic-layout.component.scss']
 })
 export class BasicLayoutComponent implements OnInit {
+
   constructor() { }
+
   ngOnInit(): void {
   }
 

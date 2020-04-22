@@ -1,3 +1,12 @@
-<p>basic-layout works!</p>
-
-<app-sidebar width="20px" height="20px"></app-sidebar>
+<section class="basic-layout-root">
+  <aside class="basic-layout-left"></aside>
+  <section class="basic-layout-right">
+    <header class="basic-layout-header"></header>
+    <div class="basic-layout-content" style="min-height: 600px;">
+      <router-outlet style="height: 100%;"></router-outlet>
+    </div>
+    <footer class="basic-layout-footer">
+      <div>Copyright Newer Notes System</div>
+    </footer>
+  </section>
+</section>

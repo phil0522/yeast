@@ -10,10 +10,15 @@
   background-color: #001529;
   box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
   flex: 0 0 256px;
+  /** The transition control animation when this class is applied. */
+  transition: all 0.5s ease-in-out;
 }
 
 .basic-layout-left.collapsed {
   flex: 0 0 64px;
+
+  /** The transition control animation when this class is applied. */
+  transition: all 0.5s ease-in-out;
 }
 
 .basic-layout-right {
@@ -33,6 +38,7 @@
   padding: 8px;
   span {
     font-size: 48px;
+    cursor: pointer;
   }
 }
 

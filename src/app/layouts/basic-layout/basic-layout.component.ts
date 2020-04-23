@@ -10,7 +10,7 @@ export class BasicLayoutComponent implements OnInit {
 
   constructor(private layoutService: GlobalLayoutService) { }
 
-  private collapsed = false;
+  public collapsed = false;
 
   ngOnInit(): void {
     this.layoutService.getCollapsedState().subscribe(

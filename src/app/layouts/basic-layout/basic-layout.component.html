@@ -25,6 +25,13 @@
         <div><span class="material-icons-outlined toolbar-icon">notifications</span></div>
       </div>
     </header>
+    <nav aria-label="breadcrumb" class="basic-layout-nav">
+      <ul class="breadcrumb">
+        <li *ngFor="let item of breadcrumbs|async" class="breadcrumb-item">
+          <a [routerLink]="item.url">{{item.name}}</a>
+        </li>
+      </ul>
+    </nav>
     <div class="basic-layout-content" style="min-height: 600px;">
       <router-outlet style="height: 100%;"></router-outlet>
     </div>

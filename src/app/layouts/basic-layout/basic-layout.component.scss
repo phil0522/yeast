@@ -109,6 +109,46 @@
   color: rgba(0, 40, 250, 0.2);
 }
 
+.basic-layout-nav {
+  flex: 0 0 60px;
+  ul {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   padding: 12px 12px;
+   margin: 0;
+
+   li {
+     line-height: 32px;
+     height: 32px;
+   }
+  }
+
+  .breadcrumb-item {
+    transition-duration: .2s;
+    align-items: center;
+    font-size: 18px;
+    white-space: nowrap;
+    word-wrap: normal;
+
+    // This line makes the separator align the same to the item text.
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumb-item+.breadcrumb-item::before {
+    font-feature-settings: "liga";
+    font-family: Material Icons;
+    content: "chevron_right";
+    white-space: nowrap;
+    word-wrap: normal;
+    margin-right: 12px;
+  }
+
+  .breadcrumb-item+.breadcrumb-item {
+    margin-left: 12px;
+  }
+}
 .basic-layout-footer  {
   flex: 0 0 64px;
   text-align: center;

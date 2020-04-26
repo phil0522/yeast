@@ -18,6 +18,12 @@
   color: #DDDDFF;
   padding: 16px 24px 0 24px;
 
+  a {
+    text-decoration: none;
+  }
+  a:visited, a:active {
+    color: inherit;
+  }
   span {
     display: inline-flex;
     // vertical align is critical to make sure span box has same size.
